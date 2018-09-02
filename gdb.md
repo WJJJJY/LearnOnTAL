@@ -1,7 +1,8 @@
-###<b><font size=5>关于GDB : UNIX下的调试工具</b>###
+<b><font size=5>关于GDB : UNIX下的调试工具</b>
 
-##<b><font size=6>基本操作指令##
 
+<b><font size=6>基本操作指令
+---
 **<font size=4>执行gdb调试**　：<em><font size=4>gdb path<b>(可执行文件路径）</b></em>
 
 <img src="https://i.imgur.com/J59JJY8.png" height="50" width="800"></img>
