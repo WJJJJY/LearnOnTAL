@@ -2,9 +2,9 @@
 <font size=4><b>git基本操作指令</b></font>
 
 
-<code>git init</code> ：初始化本地仓库
+<code>git init</code> 
 
-<code>git add 文件路径</code> ： 向暂存区添加文件
+<code>git add 文件路径</code> ： 向暂存区添加文件 范德萨范德萨范德萨
 
 <code>git commit -m ""</code> ： 把暂存区里的文件放入本地仓库
 
@@ -78,6 +78,6 @@
 
 原因 ： 对于当前本地已有的工程，当我们只想提交部分文件到git上，在<code>git pull</code>的时候会产生此类错误。具体为README.md和gdb.md均是未被跟踪的文件。
 
-解决方法 ： 
+解决方法 ： 移动文件至别处，保证当前文件夹下面只保存要提交的文件。
 
 </font></div>
