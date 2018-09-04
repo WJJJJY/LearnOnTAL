@@ -4,7 +4,7 @@
 
 <code>git init</code> 
 
-<code>git add 文件路径</code> ： 向暂存区添加文件 和规划法规和法国队和更多符合法规和官方电话
+<code>git add 文件路径</code> ： 向暂存区添加文件
 
 <code>git commit -m ""</code> ： 把暂存区里的文件放入本地仓库
 
