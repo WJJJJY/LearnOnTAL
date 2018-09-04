@@ -1,6 +1,6 @@
 <div style="line-height:12px"><font siz=3>
+<div>
 <font size=4><b>git基本操作指令</b></font>
-
 
 <code>git init</code> 
 
@@ -34,9 +34,12 @@
 
 <code>git stash</code> : 将工作区没有上传的文件放入栈内
 
+</div>
 
 
 
+
+<div style="margin:60px 0px 0px 0px">
 
 <font size=4><b>部分BUG及解决方法</b></font>
 
@@ -74,10 +77,11 @@
 	gdb.md
 	Please move or remove them before you merge.
 	Aborting
-</code>
+　　　</code>
 
 原因 ： 对于当前本地已有的工程，当我们只想提交部分文件到git上，在<code>git pull</code>的时候会产生此类错误。具体为README.md和gdb.md均是未被跟踪的文件。
 
 解决方法 ： 移动文件至别处，保证当前文件夹下面只保存要提交的文件。
 
+</div>
 </font></div>
