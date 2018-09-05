@@ -1,5 +1,7 @@
 <div style="line-height:12px"><font siz=3>
+<div>
 <font size=4><b>git基本操作指令</b></font>
+
 
 <div style="margin:20px 0 0 0"><code>git init</code> ： 初始化本地仓库</div>
 
@@ -38,6 +40,7 @@
 <code>git pull -rebase</code>
 
 
+<div style="margin:60px 0px 0px 0px">
 
 <div style="margin:50px 0px 0px 0px"><font size=4><b>部分BUG及解决方法</b></font></div>
 
@@ -75,4 +78,5 @@
 <br>
 错误信息 ： 无法正常切换分支
 
+</div>
 </font></div>
