@@ -40,9 +40,9 @@
 <code>git pull -rebase</code>
 
 
-<div style="margin:60px 0px 0px 0px">
+<div style="margin:10px 0px 0px 0px">
 
-<div style="margin:50px 0px 0px 0px"><font size=4><b>部分BUG及解决方法</b></font></div>
+<div style="margin:20px 0px 0px 0px"><font size=4><b>部分BUG及解决方法</b></font></div>
 
 错误信息 ：<code>fatal: remote origin already exists.</code>
 
@@ -62,7 +62,7 @@
 
 解决方法 ： <code>git pull origin master --allow-unrelated-histories</code>
 <br>
-错误信息 ：<code>
+错误信息 ：
 
 	 From https://github.com/WJJJJY/LearnOnTAL
 	　* branch            master     -> FETCH_HEAD
@@ -77,6 +77,8 @@
 解决方法 ： 移动文件至别处，保证当前文件夹下面只保存要提交的文件。
 <br>
 错误信息 ： 无法正常切换分支
+原因 ： 当前分支做了修改，但未提交。系统会自动提示，当前分支的哪些内容做了修改。
+解决方法 ：1. <code>git checkout .</code> 撤销对当前分支做的所有更改。2. <code>git stash</code> 将当前更改内容放入栈内，保持当前分支的干净。
 
 </div>
 </font></div>
