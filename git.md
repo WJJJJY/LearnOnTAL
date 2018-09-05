@@ -33,9 +33,11 @@
 
 <code>git pull</code> ： 将远程仓库的代码同步到本地仓库中，很多时候会出现代码冲突，需要手动合并冲突
 
-<code>git stash</code> : 将工作区没有上传的文件放入栈内
+<code>git stash</code> : 将工作区没有上传的文件放入栈内，便于分支之间的切换。
 
-<code>git checkout .</code>
+<code>git stash pop</code> ： 将栈内没有上传的文件恢复到工作区。
+
+<code>git checkout .</code> ： 清空对当前分支所做的所有修改。
 
 <code>git pull -rebase</code>
 
@@ -78,7 +80,7 @@
 <br>
 错误信息 ： 无法正常切换分支
 原因 ： 当前分支做了修改，但未提交。系统会自动提示，当前分支的哪些内容做了修改。
-解决方法 ：1. <code>git checkout .</code> 撤销对当前分支做的所有更改。2. <code>git stash</code> 将当前更改内容放入栈内，保持当前分支的干净。
+解决方法 ：1. <code>git checkout .</code> 撤销对当前分支做的所有更改。2. <code>git stash</code> 将当前更改内容放入栈内，保持当前分支的干净。当要回到该分支上继续之前的修改的时候，可用<code>git stash pop</code> 恢复之前修改的内容。
 
 </div>
 </font></div>
