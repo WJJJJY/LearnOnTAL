@@ -1,4 +1,4 @@
-<div style="line-height:12px"><font siz=3>
+git<div style="line-height:12px"><font siz=3>
 <div>
 <font size=4><b>git基本操作指令</b></font>
 
@@ -40,6 +40,8 @@
 <code>git checkout .</code> ： 清空对当前分支所做的所有修改。
 
 <code>git pull -rebase</code>
+
+<code>git remote -v</code> : 查看远程仓库的地址
 
 
 <div style="margin:10px 0px 0px 0px">
