@@ -61,11 +61,9 @@
 解决方法 ： <code>git branch --set-upstream-to=origin/远程分支 本地分支</code>
 <br>
 错误信息 ： <code>refusing to merge unrelated histories</code>
-
 原因 ： 本地仓库和远程仓库没有一个共同的commit，git认为是origin错误，此时需要开发者确定是这个origin。
-
 解决方法 ： <code>git pull origin master --allow-unrelated-histories</code>
-<br>
+
 错误信息 ：
 
 	 From https://github.com/WJJJJY/LearnOnTAL
@@ -77,9 +75,8 @@
 	Aborting
 
 原因 ： 对于当前本地已有的工程，当我们只想提交部分文件到git上，在<code>git pull</code>的时候会产生此类错误。具体为README.md和gdb.md均是未被跟踪的文件。
-
 解决方法 ： 移动文件至别处，保证当前文件夹下面只保存要提交的文件。
-<br>
+
 错误信息 ： 无法正常切换分支
 原因 ： 当前分支做了修改，但未提交。系统会自动提示，当前分支的哪些内容做了修改。
 解决方法 ：1. <code>git checkout .</code> 撤销对当前分支做的所有更改。2. <code>git stash</code> 将当前更改内容放入栈内，保持当前分支的干净。当要回到该分支上继续之前的修改的时候，可用<code>git stash pop</code> 恢复之前修改的内容。
