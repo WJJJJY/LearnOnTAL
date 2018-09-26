@@ -1,7 +1,7 @@
 <div style="line-height:12px"><font siz=3>
 <div>
 <font size=4><b>git基本操作指令</b></font><br><br>
-<div style="margin:20px 0 0 0"><code>git init</code> ： 初始化本地仓库</div><br>
+<code>git init</code> ： 初始化本地仓库<br>
 <code>git add 文件路径</code> ： 向暂存区添加文件<br>
 <code>git commit -m ""</code> ： 把暂存区里的文件放入本地仓库<br>
 <code>git remote add origin 路径</code> ： 把本地仓库与远程仓库相连接<br>
@@ -25,30 +25,28 @@
 <div style="margin:20px 0px 0px 0px"><font size=4><b>部分BUG及解决方法</b></font></div><br>
 错误信息 ：<code>fatal: remote origin already exists.</code><br>
 原因 ： 执行<code>git remote add origin</code>时出错，因为本地仓库与远程仓库的连接已经存在。<br>
-解决方法 ： 首先执行<code>git remote rm origin</code>删除本地仓库与远程仓库的连接。然后再执行<code>git remote add origin</code>指令。<br>
+解决方法 ： 首先执行<code>git remote rm origin</code>删除本地仓库与远程仓库的连接。然后再执行<code>git remote add origin</code>指令。<br><br>
 错误信息 ：<code>There is no tracking information for the current branch. Please specify which branch you want to merge with.</code><br>
 原因 ：一般在执行<code>git pull</code>的时候出错，原因是本地分支没有和远程分支建立联系。<br>
-解决方法 ： <code>git branch --set-upstream-to=origin/远程分支 本地分支</code><br>
+解决方法 ： <code>git branch --set-upstream-to=origin/远程分支 本地分支</code><br><br>
 错误信息 ： <code>refusing to merge unrelated histories</code><br>
 原因 ： 本地仓库和远程仓库没有一个共同的commit，git认为是origin错误，此时需要开发者确定是这个origin。<br>
-解决方法 ： <code>git pull origin master --allow-unrelated-histories</code><br>
-错误信息 ：
+解决方法 ： <code>git pull origin master --allow-unrelated-histories</code><br><br>
+错误信息 ：<br>
 	 From https://github.com/WJJJJY/LearnOnTAL
 	　* branch            master     -> FETCH_HEAD
 	error: The following untracked working tree files would be overwritten by merge:
 	README.md
 	gdb.md
 	Please move or remove them before you merge.
-	Aborting
+	Aborting<br>
 原因 ： 对于当前本地已有的工程，当我们只想提交部分文件到git上，在<code>git pull</code>的时候会产生此类错误。具体为README.md和gdb.md均是未被跟踪的文件。<br>
 解决方法 ： 移动文件至别处，保证当前文件夹下面只保存要提交的文件。<br><br>
 错误信息 ： 无法正常切换分支<br>
 原因 ： 当前分支做了修改，但未提交。系统会自动提示，当前分支的哪些内容做了修改。<br>
-解决方法 ：1. <code>git checkout .</code> 撤销对当前分支做的所有更改。2. <code>git stash</code> 将当前更改内容放入栈内，保持当前分支的干净。当要回到该分支上继续之前的修改的时候，可用<code>git stash pop</code> 恢复之前修改的内容。
-
-
+解决方法 ：1. <code>git checkout .</code> 撤销对当前分支做的所有更改。2. <code>git stash</code> 将当前更改内容放入栈内，保持当前分支的干净。当要回到该分支上继续之前的修改的时候，可用<code>git stash pop</code> 恢复之前修改的内容。<br><br>
 错误信息 ： fatal: refusing to merge unrelated histories<br>
 原因 ： 因为是两个不同的项目，在进行<code>pull</code>的时候，两个仓库不同，拒绝合并。<br>
-解决方法 ： 在<code>git pull</code>后面加上<code>--allow-unrelated-histories</code>。如<code>git pull origin master --allow-unrelated-histories</code>。
+解决方法 ： 在<code>git pull</code>后面加上<code>--allow-unrelated-histories</code>。如<code>git pull origin master --allow-unrelated-histories</code>。<br><br>
 </div>
 </font></div>
