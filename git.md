@@ -1,4 +1,4 @@
-git<div style="line-height:12px"><font siz=3>
+<div style="line-height:12px"><font siz=3>
 <div>
 <font size=4><b>git基本操作指令</b></font>
 
@@ -84,5 +84,9 @@ git<div style="line-height:12px"><font siz=3>
 原因 ： 当前分支做了修改，但未提交。系统会自动提示，当前分支的哪些内容做了修改。
 解决方法 ：1. <code>git checkout .</code> 撤销对当前分支做的所有更改。2. <code>git stash</code> 将当前更改内容放入栈内，保持当前分支的干净。当要回到该分支上继续之前的修改的时候，可用<code>git stash pop</code> 恢复之前修改的内容。
 
+
+错误信息 ： fatal: refusing to merge unrelated histories
+原因 ： 因为是两个不同的项目，在进行<code>pull</code>的时候，两个仓库不同，拒绝合并。
+解决方法 ： 在<code>git pull</code>后面加上<code>--allow-unrelated-histories</code>。如<code>git pull origin master --allow-unrelated-histories</code>。
 </div>
 </font></div>
