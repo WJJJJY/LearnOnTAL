@@ -20,9 +20,8 @@
 <code>git stash pop</code> ： 将栈内没有上传的文件恢复到工作区。<br>
 <code>git checkout .</code> ： 清空对当前分支所做的所有修改。<br>
 <code>git pull -rebase</code><br>
-<code>git remote -v</code> : 查看远程仓库的地址<br>
-<div style="margin:10px 0px 0px 0px">
-<div style="margin:20px 0px 0px 0px"><font size=4><b>部分BUG及解决方法</b></font></div><br>
+<code>git remote -v</code> : 查看远程仓库的地址<br><br>
+<font size=4><b>部分BUG及解决方法</b></font><br>
 错误信息 ：<code>fatal: remote origin already exists.</code><br>
 原因 ： 执行<code>git remote add origin</code>时出错，因为本地仓库与远程仓库的连接已经存在。<br>
 解决方法 ： 首先执行<code>git remote rm origin</code>删除本地仓库与远程仓库的连接。然后再执行<code>git remote add origin</code>指令。<br><br>
@@ -32,14 +31,16 @@
 错误信息 ： <code>refusing to merge unrelated histories</code><br>
 原因 ： 本地仓库和远程仓库没有一个共同的commit，git认为是origin错误，此时需要开发者确定是这个origin。<br>
 解决方法 ： <code>git pull origin master --allow-unrelated-histories</code><br><br>
-错误信息 ：<br>
+错误信息 ：
+
 	 From https://github.com/WJJJJY/LearnOnTAL
 	　* branch            master     -> FETCH_HEAD
 	error: The following untracked working tree files would be overwritten by merge:
 	README.md
 	gdb.md
 	Please move or remove them before you merge.
-	Aborting<br>
+	Aborting
+
 原因 ： 对于当前本地已有的工程，当我们只想提交部分文件到git上，在<code>git pull</code>的时候会产生此类错误。具体为README.md和gdb.md均是未被跟踪的文件。<br>
 解决方法 ： 移动文件至别处，保证当前文件夹下面只保存要提交的文件。<br><br>
 错误信息 ： 无法正常切换分支<br>
