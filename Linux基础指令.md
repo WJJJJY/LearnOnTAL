@@ -15,6 +15,8 @@
 
 <code>mkdir</code> ： 新建文件夹
 
+<code>mkdir -p</code> ： 建立多层目录
+
 <code>cmake .. || cmake CMAKE_BUILD_TYPE=RELEASE .. || cmake -G "Visual Studio 14 2015 Win64" .. || make</code> ： cmake编译基本指令
 
 <code>cat</code> ： 查看文本文件
@@ -31,7 +33,10 @@
 
 <code>docker exec -it /bin/bash</code> ：在不影响别人的情况下，进入docker
 
-<code>scp webmaster@11.11.11.11:/fadsfsfasd dfasfsfsd</code> ： 跨服务器复制文件 
+<code>scp webmaster@11.11.11.11:/fadsfsfasd dfasfsfsd</code> ： 跨服务器复制文件
+
+<code>pwd</code> ： 显示当前文件的绝对路径 
+
 
 
 
