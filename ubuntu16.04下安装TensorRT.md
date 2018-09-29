@@ -1,5 +1,5 @@
-<div><b><font size=5>Linux ubuntu 16.04</font></b></div><br>
-<div><b><font size=4><b>安装pip</b></font></div><br>
+<div><b><font size=5>Linux ubuntu 16.04</font></b></div>
+<div><b><font size=4><b>安装pip</b></font></div>
 下载并 安装setuptools ：
 
     wget --no-check-certificate https://bootstrap.pypa.io/ez_setup.py
