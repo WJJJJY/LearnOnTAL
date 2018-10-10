@@ -37,6 +37,10 @@
 
 <code>pwd</code> ： 显示当前文件的绝对路径 
 
+<code>unzip 文件名</code> ： 解压<code>.zip</code>文件
+
+<code>tar zxvf 文件名</code> ： 解压<code>.tar</code>文件
+
 
 
 
