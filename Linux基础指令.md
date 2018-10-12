@@ -41,6 +41,8 @@
 
 <code>tar zxvf 文件名</code> ： 解压<code>.tar</code>文件
 
+<code>vim /etc/profile +  source /etc/profile</code> ： 修改/增加 全局变量
+
 
 
 
