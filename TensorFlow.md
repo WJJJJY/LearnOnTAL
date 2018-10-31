@@ -22,12 +22,12 @@
 <font size=5><b>Tensor</b></font>
 > *TensorFlow*程序使用*Tensor*数据结构来代表所有的数据，计算图中，操作间传递的数据都是*tensor*；你可以把*TensorFlow tensor*看成是一个*n*维的数组或列表。一个*tensor*包含一个静态类型*rank*和一个*shape*。
 
-<font size=5><b>TensorFlow相关API</b></font>
+<font size=5><b>TensorFlow相关API</b></font><br>
 *<code>tensorflow::Session</code>* ： 定义会话<code>session</code>
 *<code>tensorflow::Tensor</code>* ： C++中*tensorflow*中方法的返回值
 *<code>tensorflow::TensorShape</code>* ： 给出*Tensor*的*Shape*
 
-<font size=5><b>数据类型</b></font>
+<font size=5><b>数据类型</b></font><br>
 *<code>DT_FLOAT</code>* ：*tf.float32*  32位浮点型
 *<code>DT_DOUBLE</code>* ：*tf.float64*  64位浮点
 *<code>DT_INT64</code>* ： *tf.int64*  64位有符号整型
