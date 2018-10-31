@@ -21,3 +21,5 @@
 
 <font size=5><b>Tensor</b></font>
 > *TensorFlow*程序使用*Tensor*数据结构来代表所有的数据，计算图中，操作间传递的数据都是*tensor*；你可以把*TensorFlow tensor*看成是一个*n*维的数组或列表。一个*tensor*包含一个静态类型*rank*和一个*shape*。
+
+<font size=5><b>TensorFlow相关API</b></font>
