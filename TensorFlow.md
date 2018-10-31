@@ -27,17 +27,17 @@
 *<code>tensorflow::Tensor</code>* ： C++中*tensorflow*中方法的返回值<br>
 *<code>tensorflow::TensorShape</code>* ： 给出*Tensor*的*Shape*<br>
 
-<font size=5><b>数据类型</b></font><br>
-*<code>DT_FLOAT</code>* ：*tf.float32*  32位浮点型
-*<code>DT_DOUBLE</code>* ：*tf.float64*  64位浮点
-*<code>DT_INT64</code>* ： *tf.int64*  64位有符号整型
-*<code>DT_INT32</code>* ：*tf.int32*  32位有符号整型
-*<code>DT_INT16</code>* ： *tf.int16* 16位有符号整型
-*<code>DT_INT8</code>* ： *tf.int8*  8位有符号整型
-*<code>DT_UINT8</code>* ：*tf.uint8*  8位无符号整型
-*<code>DT_STRING</code>* :  *tf.string*  可变长度的字节数组
-*<code>DT_BOOL</code>* ： *tf.bool*  布尔型
-*<code>DT_COMPLEX64</code>* ：*tf.complex64*  由两个32位浮点数组成的复数
-*<code>DT_QINT32</code>* ： *tf.qint32*  用于量化操作的32位有符号整型
-*<code>DT_QINT8</code>* ： *tf.qint8*   用于量化操作的8位有符号整型
-*<code>DT_QUINT8</code>* ：*tf.quint8*  用于量化操作的8位无符号整型
+<font size=5><b>数据类型</b></font><br><br>
+*<code>DT_FLOAT</code>* ：*tf.float32*  32位浮点型<br>
+*<code>DT_DOUBLE</code>* ：*tf.float64*  64位浮点<br>
+*<code>DT_INT64</code>* ： *tf.int64*  64位有符号整型<br>
+*<code>DT_INT32</code>* ：*tf.int32*  32位有符号整型<br>
+*<code>DT_INT16</code>* ： *tf.int16* 16位有符号整型<br>
+*<code>DT_INT8</code>* ： *tf.int8*  8位有符号整型<br>
+*<code>DT_UINT8</code>* ：*tf.uint8*  8位无符号整型<br>
+*<code>DT_STRING</code>* :  *tf.string*  可变长度的字节数组<br>
+*<code>DT_BOOL</code>* ： *tf.bool*  布尔型<br>
+*<code>DT_COMPLEX64</code>* ：*tf.complex64*  由两个32位浮点数组成的复数<br>
+*<code>DT_QINT32</code>* ： *tf.qint32*  用于量化操作的32位有符号整型<br>
+*<code>DT_QINT8</code>* ： *tf.qint8*   用于量化操作的8位有符号整型<br>
+*<code>DT_QUINT8</code>* ：*tf.quint8*  用于量化操作的8位无符号整型<br>
