@@ -20,7 +20,12 @@
 <code>git stash pop</code> ： 将栈内没有上传的文件恢复到工作区。<br>
 <code>git checkout .</code> ： 清空对当前分支所做的所有修改。<br>
 <code>git pull -rebase</code><br>
+<code>git log</code> ： 查看*commit*日志， <b>*q*</b>退出<br>
+<code>git reset --hard fdasfdsarefasderesfe</code> ：版本回退，本地恢复到该节点的状态。<br>
+<code>git push -f -u origin master</code> ：强退到远程分支，慎用，会直接覆盖远程分支。版本回退后，若进行分支强退，则之前的新版本无法查看。<br>
 <code>git remote -v</code> : 查看远程仓库的地址<br><br>
+
+
 <font size=4><b>部分BUG及解决方法</b></font><br>
 错误信息 ：<code>fatal: remote origin already exists.</code><br>
 原因 ： 执行<code>git remote add origin</code>时出错，因为本地仓库与远程仓库的连接已经存在。<br>
