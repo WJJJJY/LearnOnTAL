@@ -25,6 +25,11 @@
 <code>git push -f -u origin master</code> ：强退到远程分支，慎用，会直接覆盖远程分支。版本回退后，若进行分支强退，则之前的新版本无法查看。<br>
 <code>git remote -v</code> : 查看远程仓库的地址<br><br>
 
+<font size=4><b>提交当前分支的代码到其他分支 *git cherry-pick commit_id*</b></font><br>
+> *<code>git checkout odd_cc</code>* ： 切换到目的分支<br>
+> *<code>git cherry-pick commit_id</code>* ：*commit_id*为源分支的*ID*，可在源分支上通过*git log*获取。<br>
+> *push*的时候可能会出现冲突，此时需要手动*fix*冲突，然后执行*git commit*<br><br>
+
 
 <font size=4><b>部分BUG及解决方法</b></font><br>
 错误信息 ：<code>fatal: remote origin already exists.</code><br>
