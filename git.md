@@ -22,7 +22,12 @@
 <code>git pull -rebase</code><br>
 <code>git log</code> ： 查看*commit*日志， <b>*q*</b>退出<br>
 <code>git reset --hard fdasfdsarefasderesfe</code> ：版本回退，本地恢复到该节点的状态。<br>
-<code>git push -f -u origin master</code> ：强退到远程分支，慎用，会直接覆盖远程分支。版本回退后，若进行分支强退，则之前的新版本无法查看。<br>
+<code>git push -f -u origin master</code> ：强推到远程分支，慎用，会直接覆盖远程分支。版本回退后，若进行分支强退，则之前的新版本无法查看。<br>
+<code>git branch -d branch_id</code> ： 删除本地分支*branch_id*<br>
+<code>git branch -a</code> ： 列出已有分支目录<br>
+<code>git push origin --delete branch_id</code> ： 删除远程分支*branch_id*<br>
+<code>git merge branch_id</code> ： 分支合并，把*branch_id*分支合并到当前分支。<br>
+
 <code>git remote -v</code> : 查看远程仓库的地址<br><br>
 
 <font size=4><b>提交当前分支的代码到其他分支 *git cherry-pick commit_id*</b></font><br>
