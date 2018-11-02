@@ -18,5 +18,11 @@
 <font size=5><b>撤销修改</b></font>
 > *<code>git checkout . 或者 git reset --hard</code>* ：撤销<b>工作区</b>的修改，针对<b>已修改未暂存</b>。
 > *<code>git reset</code>* ：撤销对<b>暂存区</b>的修改，对文件的修改会恢复到<b>工作区</b>。
-> *<code>git reset --hard origin/master></code>* ： 撤销对<b>本地仓库</b>的修改，对文件的修改会恢复到<b>暂存区</b>。
-> *<code>git reset --hard HEAD^</code>* ： 撤销对<b>远程仓库</b>的修改，对文件的修改会恢复到<b>本地仓库</b>。
+> *<code>git reset --hard origin/master></code>* ： 撤销对<b>本地仓库</b>的修改。
+> *<code>git reset --hard HEAD^</code>* ： 撤销对<b>远程仓库</b>的修改</b>。
+
+<br><br>
+<font size=5><b>对撤销的撤销</b></font>
+<font size=4><b>背景 : 使用*<code>git commit</code>*对本地仓库做了修改，然后使用*<code>git reset --hard origin/master</code>*将远程仓库拉取到了本地仓库，此时本地仓库恢复到了修改之前的状态，但之前对文件所做的全部修改都消失。因为没有*<code>git push</code>*操作，*<code>git log</code>*无法查看刚才*<code>commit</code>*之后的*<code>commit id</code>*。 此时可以使用*<code>git reflog</code>*。</b></font>
+> *<code>git reflog</code>* ： 即可查看每一步的*<code>commit id</code>*。
+> *<code>git reset --hard commit_id</code>* ：即可恢复到之前被覆盖的*<code>commit</code>*。
