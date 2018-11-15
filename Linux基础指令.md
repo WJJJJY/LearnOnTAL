@@ -33,11 +33,19 @@
 
 <code>docker exec -it /bin/bash</code> ：在不影响别人的情况下，进入docker
 
-<code>scp webmaster@11.11.11.11:/fadsfsfasd dfasfsfsd</code> ： 跨服务器复制文件
+<code>scp webmaster@11.11.11.11:/path_1 path_2</code> ：跨服务器传输文件*path_1* 到 *path_2*
+
+<code>scp path_2 webmaster@11.11.11.11:/path_1</code> ： 跨服务器传输文件*path_2* 到 *path_1*
 
 <code>pwd</code> ： 显示当前文件的绝对路径 
 
-<code>unzip 文件名</code> ： 解压<code>.zip</code>文件
+<code>unzip name.zip</code> ： 解压<code>.zip</code>文件
+
+<code>zip name.zip name</code> ： 压缩*name*文件为*name.zip*文件
+
+<code>tar zxvf name.tar</code> ： 解压*name.tar*文件
+
+<code>tar czvf name.tar name</code> ： 压缩*name*文件为*name.tar*
 
 <code>tar zxvf 文件名</code> ： 解压<code>.tar</code>文件
 
