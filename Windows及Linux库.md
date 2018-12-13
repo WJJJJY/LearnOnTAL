@@ -7,7 +7,7 @@
 静态库：后缀名*.a*，用于静态连接<br>
 共享库：后缀名*.so*，用于动态链接，相当于Windows下的dll。
 
-fdasfdsfdaf
+fdasfdsfdaf<br>
 
 dafsfdsfsf
 
