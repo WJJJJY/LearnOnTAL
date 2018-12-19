@@ -9,6 +9,11 @@
 共享库：后缀名<code>.so</code>，用于动态链接，相当于Windows下的dll。
 
 ### <b>1.　Linux下的<code>.so</code>库找不到的问题</b>
+对于可执行程序，可以先用<code>ldd</code>查看当前可执行程序依赖了哪些库。<br>
+若对应的库显示<code>not find</code>，可用<code>find -name</code>查找依赖库的位置。及解决问题的前提是缺失的库存在。<br>
+几个解决办法：
+- 若只是用于临时测试，可以通过设置<b>临时变量</b>来解决。及<code>export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/workspace_private/... 。临时变量在系统重启后即失效。
+- 
 
 
 
