@@ -12,8 +12,8 @@
 对于可执行程序，可以先用<code>ldd</code>查看当前可执行程序依赖了哪些库。<br>
 若对应的库显示<code>not find</code>，可用<code>find -name</code>查找依赖库的位置。及解决问题的前提是缺失的库存在。<br>
 几个解决办法：
-- 若只是用于临时测试，可以通过设置<b>临时变量</b>来解决。及<code>export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/workspace_private/... 。临时变量在系统重启后即失效。
+- 若只是用于临时测试，可以通过设置<b>临时变量</b>来解决。即<code>export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/workspace_private/...</code>；其中<code>LD_LIBRARY_PATH</code>为系统预设的变量；对于<code>LD_LIBRARY_PATH</code>的值，可以用<code>echo $LD_LIBRARY_PATH</code>来显示。临时变量在系统重启后即失效。
+- 一般Linux把<code>/lib</code>和<code>/usr/lib</code>这两个目录作为默认的库搜索路径，所以使用这两个目录的库时不需要进行设置搜索路径即可使用。所以，如果允许的情况下，可以将<code>.so</code>库放到该目录下。
 - 
-
 
 
