@@ -8,7 +8,7 @@
 静态库：后缀名<code>.a</code>，用于静态连接<br>
 共享库：后缀名<code>.so</code>，用于动态链接，相当于Windows下的dll。
 
-###　<b>１.　Linux下的<code>.so</code>库找不到的问题
+### <b>1.　Linux下的<code>.so</code>库找不到的问题</b>
 
 
 
