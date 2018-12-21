@@ -29,7 +29,7 @@
 <code>tar czvf name.tar name</code> ： 压缩*name*文件为*name.tar*<br>
 <code>tar zxvf 文件名</code> ： 解压<code>.tar</code>文件<br>
 <code>vim /etc/profile +  source /etc/profile</code> ： 修改/增加 全局变量<br>
-
+<code>find ./ -name '*' -type f | xargs grep 'LocLossType'</code> ： 在当前目录下查找包含'LocLossType'的文件。<br>
 
 
 
